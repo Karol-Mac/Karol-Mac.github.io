@@ -338,17 +338,10 @@
               block or even delete a user or defective product.
             </p>
           </div>
-
           <div class="content">
             <div class="toggle-section">
               <h4><i class="bx bx-arrow-to-left"></i>Main functionalities</h4>
             </div>
-<!--            <ul class="collapse">-->
-<!--              <li><i class="bi bi-chevron-right"></i><span>search for a product</span></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i><span>login as private person (user, admin) / company</span></li>-->
-<!--              <li><i class="bi bi-chevron-right"></i><span>sellers can manage their products (CRUD)</span></li>-->
-<!--            </ul>-->
-
             <ul class="collapse">
               <li>
                 <strong>Available for Everyone:</strong>
@@ -356,17 +349,18 @@
                   <li><i class="bi bi-chevron-right"></i><span>Browse and search for products</span></li>
                   <li><i class="bi bi-chevron-right"></i><span>Compare product prices and nutritional values</span></li>
                   <li><i class="bi bi-chevron-right"></i><span>View product details</span></li>
-                  <li><i class="bi bi-chevron-right"></i><span>Access general information about the platform</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>See comments</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Register new private/company Account</span></li>
                 </ul>
               </li>
 
               <li>
                 <strong>User Actions:</strong>
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i><span>Create an account</span></li>
                   <li><i class="bi bi-chevron-right"></i><span>Log in and manage their profile</span></li>
                   <li><i class="bi bi-chevron-right"></i><span>Add products to favourites</span></li>
-                  <li><i class="bi bi-chevron-right"></i><span>Comment on products</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Manage the favourite list</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Comment on application</span></li>
                   <li><i class="bi bi-chevron-right"></i><span>Report inappropriate comments or defective products</span></li>
                 </ul>
               </li>
@@ -374,120 +368,90 @@
               <li>
                 <strong>Seller Actions:</strong>
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i><span>Upload new product data</span></li>
-                  <li><i class="bi bi-chevron-right"></i><span>Manage product inventory</span></li>
-                  <li><i class="bi bi-chevron-right"></i><span>Edit product details</span></li>
-                  <li><i class="bi bi-chevron-right"></i><span>View reports on defective products</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Manage product data (CRUD)</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>See statistics about added products</span></li>
                 </ul>
               </li>
 
               <li>
                 <strong>Admin Actions:</strong>
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i><span>Moderate comments</span></li>
                   <li><i class="bi bi-chevron-right"></i><span>Block or delete users</span></li>
                   <li><i class="bi bi-chevron-right"></i><span>Remove inappropriate comments or products</span></li>
                   <li><i class="bi bi-chevron-right"></i><span>Manage user accounts</span></li>
-                  <li><i class="bi bi-chevron-right"></i><span>Generate platform usage reports</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Change the role of selected user</span></li>
                 </ul>
               </li>
             </ul>
           </div>
+
+          <div class="row mb-4 p-3" data-aos="fade-up" data-aos-delay="100">
+            <a href="https://www.postman.com/galactic-shuttle-380977/nutrinexus-aws/overview" target="_blank">
+              <strong>See usage of application in Postman</strong></a>
+          </div>
         </div>
 
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
+        <div>
+          <h3 class="text-primary">StyleSwap</h3>
+          <div>
+            <div class="toggle-section">
+              <h4><i class="bx bx-arrow-to-left"></i> brief overview</h4>
             </div>
+            <p class="collapse">
+              StyleSwap is a complex level 4 (on the Fielding scale) REST API for a shopping platform to
+              sell clothes to other users. It is my solo project, which I am successively developing,
+              fixing bugs and adding more features. <br>
+<!--              My goal is (and has always been) to create the best possible solution.-->
+<!--              Often when I'm exploring a particular technology, I'm driven by the idea of improving the project.-->
+<!--              In the case of StyleSwap, I have created an intuitive and well-documented API that is ready to go into production.<br>-->
+              The API is as developer-friendly as possible, thanks to its simple design,
+              the use of HATEOAS (which makes it much easier to add a frontend)
+              and clear documentation created in the widely used SwaggerUI. <br>
+              Users have access to a wide range of functionalities,
+              including converting with sellers (other users), saving interesting clothes in their warehouse
+              and performing real transactions (thanks to the connection with Stripe, the payment gateway).
+            </p>
+          </div>
+          <div class="content">
+            <div class="toggle-section">
+              <h4><i class="bx bx-arrow-to-left"></i>Main functionalities</h4>
+            </div>
+            <ul class="collapse">
+              <li>
+                <strong>Available for Everyone:</strong>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i><span>Browse and search for clothes</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>View clothe details</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Create an account</span></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>User Actions:</strong>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i><span>Log in and manage their profile</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>add and manage own clothing</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Message to other sellers</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Manage conversations</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>add clothes to the storage</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>buy the chosen clothing</span></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Admin Actions:</strong>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i><span>Manage user accounts</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Create new clothe categories</span></li>
+                  <li><i class="bi bi-chevron-right"></i><span>Manage orders (statistics)</span></li>
+                </ul>
+              </li>
+            </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
+          <div class="row mb-4 p-3" data-aos="fade-up" data-aos-delay="100">
+              <strong>place to add swagger XD</strong>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
