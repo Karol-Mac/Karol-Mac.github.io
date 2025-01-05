@@ -351,26 +351,47 @@ section {
   color: #173b6c;
 }
 
-.about .content ul {
+.content ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.about .content ul li {
+.content ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.content > ul > li > strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.content ul ul {
+  padding-left: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
+}
+
+.content ul ul li {
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 }
 
-.about .content ul strong {
+.content ul i {
+  font-size: 18px;
   margin-right: 10px;
+  color: #149ddd;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.about .content ul i {
+.content ul li span {
   font-size: 16px;
-  margin-right: 5px;
-  color: #149ddd;
-  line-height: 0;
+  color: #555;
 }
 
 .about .content p:last-child {
@@ -631,6 +652,20 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+}
+
+.toggle-section {
+  cursor: pointer;
+}
+
+.toggle-section :hover {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.collapse {
+  display: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .portfolio-details .portfolio-details-slider img {

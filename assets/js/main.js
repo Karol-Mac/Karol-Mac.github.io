@@ -92,7 +92,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function() {
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -151,7 +151,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function() {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -187,15 +187,14 @@
         });
       }, true);
     }
-
   });
 
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+  // const portfolioLightbox = GLightbox({
+  //   selector: '.portfolio-lightbox'
+  // });
 
   /**
    * Portfolio details slider
@@ -254,6 +253,27 @@
       mirror: false
     })
   });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleSections = document.querySelectorAll('.toggle-section'); // Pobierz wszystkie sekcje toggle
+
+    toggleSections.forEach(toggle => {
+      const arrow = toggle.querySelector('.bx'); // Znajdź ikonę strzałki w danej sekcji
+      const collapsible = toggle.nextElementSibling; // Znajdź element `p` lub `ul` obok `toggle-section`
+
+      toggle.addEventListener('click', function() {
+        collapsible.classList.toggle('collapse');
+        if (collapsible.classList.contains('collapse')) {
+          arrow.classList.replace('bx-arrow-to-bottom', 'bx-arrow-to-left');
+        } else {
+          arrow.classList.replace('bx-arrow-to-left', 'bx-arrow-to-bottom');
+        }
+      });
+    });
+  });
+
+
 
   /**
    * Initiate Pure Counter 
